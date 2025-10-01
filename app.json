@@ -1,0 +1,106 @@
+{
+    "name": "𝗖𝝠𝝦𝝩𝝠𝝞𝝥 𝝦𝗥𝝞𝗖𝝽°™️ 🇱🇰",
+    "description": "When You Going To Send File On Telegram Channel This Bot Will Save That In Database, So You Can Search That Easily In Inline Mode",
+    "keywords": [
+      "telegram",
+      "auto-filter",
+      "filter",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://www.kisarapesanjith.ga",
+    "repository": "https://github.com/KisaraPesanjithPerera/Captain-Price",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Bot token.",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get This Value From https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get This Value From https://my.telegram.org",
+            "value": ""
+        },
+        "CHANNELS": {
+            "description": "Username or ID of Channel or Group. Separate multiple IDs by space.",
+            "value": ""
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate Multiple Admins By Space. @MaX_Captain_Price_Robot",
+            "value": ""
+        },
+        "AUTH_USERS": {
+            "description": "Username or ID of Users To Give Access Of Inline Search. Separate Multiple Users By Space.\nLeave It Empty If You Don't Want To Restrict Bot Usage. @MaX_Captain_Price_Robot",
+            "value": "",
+            "required": false
+        },
+        "AUTH_CHANNEL": {
+            "description": "ID Of Channel.Make Sure Bot Is Admin In This Channel. Without Subscribing This Channel Users Cannot Use Bot.",
+            "value": "",
+            "required": false
+        },
+        "START_MSG": {
+            "description": "Welcome Message For Start Command",
+            "value": "**Hi, I'm 𝗖𝝠𝝦𝝩𝝠𝝞𝝥 𝝦𝗥𝝞𝗖𝝽°™️ 🇱🇰 Clone You can call me as 𝗖𝝠𝝦𝝩𝝠𝝞𝝥 𝝦𝗥𝝞𝗖𝝽°™️ 🇱🇰 **\n\nHere you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search😍.",
+            "required": false
+        },
+        "USE_CAPTION_FILTER": {
+            "description": "Whether Bot Should Use Captions To Improve Search Results. (True False)",
+            "value": "False",
+            "required": false
+        },
+        "OMDB_API_KEY": {
+            "description": "Paste Your OMDB Key",
+            "value": "",
+            "required": false
+        },
+        "CUSTOM_FILE_CAPTION": {
+            "description": "A Custom File Caption For Your Files. Formatable With , file_name, file_caption, file_size, Read Readme.md For Better Understanding.",
+            "value": "",
+            "required": false
+        },
+        "AUTH_GROUPS": {
+            "description": "ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.",
+            "value": "",
+            "required": false
+        },
+        "DATABASE_URI": {
+            "description": "mongoDB URI. Get This Value From https://www.mongodb.com For More Help Watch This Video - https://www.youtube.com/watch?v=62PNPsQwIZ8",
+            "value": ""
+        },
+        "DATABASE_NAME": {
+            "description": "Name Of The Database In mongoDB. For More Help Watch This Video - https://www.youtube.com/watch?v=62PNPsQwIZ8",
+            "value": ""
+        },
+        "COLLECTION_NAME": {
+            "description": "Name Of The Collections. Defaults To Telegram_files. If You Are Using The Same Database, Then Use Different Collection Name For Each Bot Telegram_files",
+            "value": "",
+            "required": false
+        },
+        "CACHE_TIME": {
+            "description": "The Maximum Amount Of Time In Seconds That The Result Of The Inline Query May Be Cached On The Server",
+            "value": "300",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
